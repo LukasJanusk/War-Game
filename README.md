@@ -17,7 +17,7 @@ Initial to do:
    a. draw from shuffled deck.<br>
    b. randomly decide player to go first.<br>
    c. drawing from players deck phase. Game loop starts here(optionally can make user type "draw" to initialize this         phase.<br>
-   d. placing on table phase. We should type which cards have been placed. Here __str__ methind should work(optionaly        implement visuals how cards can be represented on table using unicode symbols)
+   d. placing on table phase. We should type which cards have been placed. Here __str__ methind should work(optionaly        implement visuals how cards can be represented on table using unicode symbols)<br>
    e. comparing phase<br>
    f. war phase if equal value cards have been placed and comparing again.(war according to wiki is one car face down        second is face up.<br>
    g. taking phase (whoever wins cards takes them to their current deck)<br>
