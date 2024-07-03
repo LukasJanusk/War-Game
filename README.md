@@ -14,15 +14,15 @@ Initial to do:
 1. Create card class in separate file. each car will have name and value (unicode symbol optionaly). ex 10 value will be set for 10 of clubs card. Queen of hearts will have value of 12 etc. this way we will know which cards can take which.
 2. Create class for player which will have two instances Human and Computer. Inside this class we can make a list for currently owned cards each. This way tracking current decks. 
 3. Create game phases:
-   a. draw from shuffled deck.
-   b. randomly decide player to go first.
-   c. drawing from players deck phase. Game loop starts here(optionally can make user type "draw" to initialize this         phase.
+   a. draw from shuffled deck.<br>
+   b. randomly decide player to go first.<br>
+   c. drawing from players deck phase. Game loop starts here(optionally can make user type "draw" to initialize this         phase.<br>
    d. placing on table phase. We should type which cards have been placed. Here __str__ methind should work(optionaly        implement visuals how cards can be represented on table using unicode symbols)
-   e. comparing phase
-   f. war phase if equal value cards have been placed and comparing again.(war according to wiki is one car face down        second is face up.
-   g. taking phase (whoever wins cards takes them to their current deck)
-   h. implement check for game end inside gameloop
-   i. game over message.
+   e. comparing phase<br>
+   f. war phase if equal value cards have been placed and comparing again.(war according to wiki is one car face down        second is face up.<br>
+   g. taking phase (whoever wins cards takes them to their current deck)<br>
+   h. implement check for game end inside gameloop<br>
+   i. game over message.<br>
    
    
    
