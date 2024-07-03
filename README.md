@@ -1,13 +1,12 @@
 # War-Game
 Game rules:
 
-1.Game has to be between 2 players. 
-2.Player1 is human(program user)
-3.Player2 is computer
-4.Computer moves are calculated randomly(reading the rules of the game online suggests that there are no moves really)
-5.Game ends when one player runs out of cards. Player without cards loses
-6.Deck has 52 cards, each player gonna randomly draw 15 cards at the beggining of the game. 
-
+1.Game has to be between 2 players.<br>
+2.Player1 is human(program user)<br>
+3.Player2 is computer<br>
+4.Computer moves are calculated randomly(reading the rules of the game online suggests that there are no moves really)<br>
+5.Game ends when one player runs out of cards. Player without cards loses<br>
+6.Deck has 52 cards, each player gonna randomly draw 15 cards at the beggining of the game. <br>
 
 Initial to do:
 
