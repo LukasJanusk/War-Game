@@ -7,7 +7,30 @@ def main():
     size = get_deck_size()
     cards = initiate_deck()
     player1, player2 = initiate_players(size, cards)
+    game(player1, player2)
 
+    
+def game(player_1, player_2):
+    if random.choice([player_1, player_2]) == player_1:
+       turn(player_1, player_2) 
+    else: turn(player_2, player_1)
+
+    
+def turn(first: Player, second: Player):
+
+    print(
+        f'Player 1: {first}\nPlayer 2: {second}'
+    )
+
+    if first.active_card.value > second.active_card.value:
+        first.is_winner(second.active_card)
+        print('Player 1 Won!!')
+    elif first.active_card.value < second.active_card.value:
+        second.is_winner(first.active_card)
+        print('player 2 Won!!')
+    else:
+        print('War!!')
+    
 
 def initiate_deck():
     cards = []
@@ -36,11 +59,11 @@ def initiate_deck():
 
 def initiate_players(size, deck):
     remaining_deck = deck
-    player1_cards = random.samble(remaining_deck, size)
+    player1_cards = random.sample(remaining_deck, size)
     for card in remaining_deck:
         if card in player1_cards:
             remaining_deck.remove(card)
-    player2_cards = random.samble(remaining_deck, size)
+    player2_cards = random.sample(remaining_deck, size)
     player1 = Player(player1_cards)
     player2 = Player(player2_cards)
     players = [player1, player2]
@@ -59,4 +82,5 @@ def get_deck_size():
             continue
 
 
-initiate_deck()
+if __name__ == '__main__':
+    main()
