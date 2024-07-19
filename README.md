@@ -10,10 +10,10 @@ Game rules:
 
 Initial to do:
 
-1. Create card class in separate file. each car will have name and value (unicode symbol optionaly). ex 10 value will be set for 10 of clubs card. Queen of hearts will have value of 12 etc. this way we will know which cards can take which.
-2. Create class for player which will have two instances Human and Computer. Inside this class we can make a list for currently owned cards each. This way we can track current decks. 
+1.~~ Create card class in separate file. each card will have name and value (unicode symbol optionaly). ex 10 value will be set for 10 of clubs card. ~~~~Queen of hearts will have value of 12 etc. this way we will know which cards can take which.~~
+2. ~~Create class for player which will have two instances Human and Computer. Inside this class we can make a list for currently owned cards each. ~~~~This way we can track current decks.~~
 3. Create game phases:<br> 
-   a. draw deck phase. Ask user for the size of decks to play;<br>
+  ~~ a. draw deck phase. Ask user for the size of decks to play;~~<br>
    b. randomly decide player to go first;<br>
    c. drawing from players deck phase. Game loop starts here(optionally can make user type "draw" to initialize this phase;<br>
    d. placing on table phase. We should type which cards have been placed. Here __str__ methind should work(optionaly implement visuals how cards can be represented on table using unicode symbols);<br>
