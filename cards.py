@@ -3,5 +3,6 @@ class Card:
         self.value = value
         self.symbol = symbol
         self.name = name
+
     def __str__(self):
         return f'{self.name} {self.symbol}'
